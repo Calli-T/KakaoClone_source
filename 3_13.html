@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>The attribute-selector</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        @font-face {
+            font-family: maple;
+            src: url(/font/maple_right.ttf) format('truetype');
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            font-family: maple;
+        }
+
+        input[placeholder~=Name] {
+            border-color: green;
+            border-radius: 5px;
+        }
+
+        input:required {
+            border-color: red;
+            border-radius: 5px;
+        }
+    </style>
+    <!--
+        []사이  attribute를 넣어 select가능하다
+        =가 아닌 ~=를 사용하면 ~=뒤의 글자가 포함된(붙여쓴거는 x) 모든 attribute에 적용된다(=앞에 사용할 다른 요소들도 있다)
+        입력이없는 attribute는 :로도 가능하다
+    -->
+
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="password" required placeholder="password">
+    </form>
+
+</body>
+
+</html>

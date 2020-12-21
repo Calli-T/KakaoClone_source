@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The pseudo-selector</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <!--
+            div:first-child {
+            background-color: teal;
+        }
+        -->
+    <style>
+        body {
+            height: 1000vh;
+            margin: 50px;
+        }
+
+        div {
+            height: 100px;
+            width: 300vh;
+
+            position: flex;
+        }
+
+        div:last-child {
+            background-color: tomato;
+        }
+
+
+        span {
+            background-color: black;
+            font-size: 40px;
+        }
+
+        span:nth-child(even) {
+            background-color: wheat;
+        }
+
+        span:nth-child(2n) {
+            background-color: wheat;
+        }
+
+        span:first-child {
+            font-size: 80px
+        }
+
+        span:last-child {
+            font-size: 80px;
+        }
+
+        span:nth-child(odd) {
+            background-color: aquamarine;
+        }
+    </style>
+    <!--pseudo selector, 디자인요소의 뒤에 콜론과 특정키워드를 달아 특정 순번의 요소에게만 디자인을 부여할 수 있다.-->
+    <!--어째선지 last-child옵션이 말을 안듣는다-->
+
+</head>
+
+<body>
+    <!--
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>    
+    -->
+    <div>
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+    </div>
+    <!--last-child옵션이 말을 잘안듣는게, 어째 부모element에 영향을 받는것같다?-->
+    <!--노매드 코더는 body에다가 집어넣어도 말을 잘만듣더니, 나는 body가 parent인 경우에는 말을 안듣는다-->
+
+
+</body>
+
+</html>

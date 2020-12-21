@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Classes</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        body {}
+
+        span {
+            background-color: teal;
+            margin: 20px;
+        }
+
+        #tomatomato1,
+        #tomatomato2,
+        #tomatomato3 {
+            color: tomato;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        .tomato {
+            background-color: tomato;
+        }
+    </style>
+    <!--Inline요소들은 margin을 상, 하로 가질 수는 없다-->
+    <!--같은 속성을 지니게할 요소들의 id를 #과,로 묶어서 같은 속성을 입력할 수 있다-->
+    <!--같은 속성을 지니게할 요소들을 class로 묶고 .(클래스명){}으로 같은 속성을 입력할 수 있다-->
+    <!--클래스는 고유할 이유가 없으며, 하나의 요소가 여러개의 클래스를 가지는 것도 가능하다-->
+
+</head>
+
+<body>
+    <span class="btn tomato">Inline test</span>
+    <span id="tomatomato1">Inline test2</span>
+    <span class="btn tomato">Inline test3</span>
+    <span id="tomatomato2">Inline test4</span>
+    <span class="btn tomato">Inline test5</span>
+    <span id="tomatomato3">Inline test6</span>
+    <span class="btn tomato">Inline test7</span>
+</body>
+
+</html>

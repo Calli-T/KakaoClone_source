@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <Title>Padding Test</Title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        * {
+            border: 1px solid green
+        }
+
+        html {
+            background-color: silver;
+        }
+
+        body {
+            background-color: aquamarine;
+            margin: 0;
+            padding: 20px;
+        }
+
+        div {
+            background-color: bisque;
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+        }
+
+        #first {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+
+        #second {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+        }
+
+        #third {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        #fourth {
+            width: 25px;
+            height: 25px;
+            background-color: blue;
+        }
+
+        span {
+            border-style: dashed;
+            border-color: black;
+        }
+    </style>
+    <!--padding은 경계선 내부의 공간을 정의한다-->
+    <!--*{}를 사용하면 모든 요소에 적용될 디자인을 정할 수 있다-->
+    <!--border는 경계선을 디자인 할 수 있다 -->
+
+</head>
+
+<body>
+    <div id="first">
+        <div id="second">
+            <div id="third">
+                <div id="fourth">
+                    <span>D</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

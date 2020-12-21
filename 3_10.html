@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The fixed</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        body {
+            height: 1000vh;
+        }
+
+        #blueBox {
+            background-color: teal;
+            width: 200px;
+            height: 200px;
+            left: 100px;
+            top: 100px;
+            opacity: 0.2;
+        }
+
+        #wheatBox {
+            background-color: wheat;
+            position: fixed;
+            left: 100px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #blackBox {
+            background-color: black;
+            position: fixed;
+            left: 100px;
+            top: 100px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+</head>
+
+<!--position: fixed옵션을 사용하면 화면에 고정된 위치에 존재하게 된다-->
+<!--fixed와 함께 left, top등의 옵션을 하나라도 사용하면 모든레이어들을 무시하고 위에있게된다-->
+
+<body>
+    <div id="blueBox"></div>
+    <div id="wheatBox">
+        <div id="blackBox">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

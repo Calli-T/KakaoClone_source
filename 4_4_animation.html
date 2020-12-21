@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Animation</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        @keyframes coinFlip {
+            from {
+                transform: rotateZ(0deg);
+            }
+
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        #logo {
+            border: 2px solid black;
+            border-radius: 50%;
+            animation: coinFlip 1s ease-in-out infinite;
+        }
+    </style>
+
+    <!--
+        @keyframes 애니메이션 이름으로 애니메이션 작성가능
+        from{} to{}로 내역작성
+        animation: 애니메이션 이름으로 적용가능
+        옵션에 infinite를 붙여 무한히 움직이도록 작동가능
+        애니메이션은 조합도 가능하다
+    -->
+</head>
+
+<body>
+    <img id="logo" src="/img/JPG.jfif">
+</body>
+
+</html>

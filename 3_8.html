@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <Title>Inline_block Test</Title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+        }
+    </style>
+    <!--자식element에게 flex를 적용하려면 부모element에게 알려주어야한다-->
+    <!--vh는 길이의 단위로써, 화면크기에 대한 비율의 백분율을 의미한다-->
+    <!--display:flex가 설정되었다면, justify-content와 align-items옵션을 사용할 수 있다-->
+    <!--justify-content, align-items옵션은 각각 주축(디폴트는 수평)과 교차축(디폴트는 수직)에 적용된다-->
+
+</head>
+
+<body>
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+</body>
+
+</html>

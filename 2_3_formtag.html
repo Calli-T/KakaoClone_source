@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+
+<html lang="kr">
+
+<head>
+    <title>Form Tag Test</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+</head>
+<!--
+        입력의 <input>태그
+        양식의 <form>태그
+
+        attribute에서
+        placeholder는 힌트
+        type은 양식
+        required는 적었는지 검사
+        submit type은 제출버튼
+        value는 값 
+        input에서 file타입은 파일입력
+        accept로 형식제한가능
+        audio/* vidio/* image/*등은 종류에 해당하는
+        모든 파일을 의미
+    -->
+
+<body>
+
+    <form>
+        <!--
+        <label for="profile">Profile Photo</label>
+        <input id="profile" type="file" accept=".pdf, .jpg" />
+
+        <label for="first-name">First Name</label>
+        <input id="first-name" placeholder="Name" required type="text" />
+
+        <input placeholder="Last Name" required type="text" />
+        <input placeholder="UserName" required type="text" />
+        <input placeholder="Password" required type="password" minlength="10" />
+        <label for="website">Web Site</label>
+        <input id="website" required placeholder="Name" type="url" />
+        <input required type="range" />
+        -->
+
+        <!--id는 전체 html문서에서 고유한 값을 지녀야한다-->
+        <!--<div>tag는, 구분이나 경계선을 의미한다. 서로 양 옆에 붙어있을 수 없다-->
+        <header>
+            <h1>The html</h1>
+        </header>
+
+        <div>
+            <label for="date">Date</label>
+            <input id="date" required type="date" />
+
+            <input type="submit" value="Create Account" />
+        </div>
+
+        <main>
+            <p>hello</p>
+            <span>짧다</span>
+            <address>대구광역시 동구 효동로108길</address>
+            <!--<span>tag는 짧은글-->
+            <!--address는 주소-->
+        </main>
+
+        <footer>
+            <h4>&copy; 2020 N.C</h4>
+        </footer>
+
+    </form>
+
+</body>
+
+</html>

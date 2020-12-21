@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Animation</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes coinFlip {
+            0% {
+                transform: rotateY(0deg) translateY(0px);
+            }
+
+            25% {
+                transform: rotateY(360deg) translateY(100px);
+                border-radius: 25%;
+            }
+
+            50% {
+                transform: rotateY(0deg) translateY(0px);
+                border-radius: 0%;
+            }
+
+            75% {
+                transform: rotateY(360deg) translateY(-100px);
+                border-radius: 25%;
+            }
+
+            100% {
+                transform: rotateY(0deg) translateY(0px);
+            }
+        }
+
+        #logo {
+            border: 2px solid black;
+            border-radius: 50%;
+            animation: coinFlip 4s ease-in-out infinite;
+        }
+    </style>
+
+    <!--
+      from-to가 아닌 %로 진행상황 세분화 선택가능
+      일부옵션은 animation적용이 잘안됨 
+    -->
+</head>
+
+<body>
+    <img id="logo" src="/img/logo.svg">
+</body>
+
+</html>

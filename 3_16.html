@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Etc.</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        @font-face {
+            font-family: maple;
+            src: url(/font/maple_right.ttf) format('truetype');
+        }
+
+        :root {
+            --text-box: 3px solid rgb(0, 0, 0);
+            --maple-font: 'maple';
+        }
+
+        input {
+            border: var(--text-box);
+        }
+
+        input::placeholder {
+            font-family: var(--maple-font);
+            color: rgb(250, 70, 100);
+        }
+
+        p::selection {
+            background-color: rgb(154, 205, 50);
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            color: rgb(154, 205, 50, 0.5);
+        }
+    </style>
+    <!--
+       색을 표현하는 3가지 방법
+       rgb, rgba, 16진법 6자리수
+   -->
+    <!--
+       :root는 모든요소에 적용
+     -->
+    <!--
+         custom property는 --이름-이름: 내용; 형식을로 지정가능
+         변수로 활용가능
+     -->
+
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="Name">
+    </form>
+    <p>To be or not to be, that's the question</p>
+
+</body>
+
+</html>

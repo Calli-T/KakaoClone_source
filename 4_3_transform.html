@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Transform</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        #logo {
+            border: 2px solid black;
+            border-radius: 50%;
+            transition: all 1s ease-in-out;
+        }
+
+        #logo:hover {
+            transform: rotateZ(180deg);
+        }
+    </style>
+
+    <!--
+        transform은 형태의 변형을 일으킨다
+        transistion과 연계할 수 있다
+        rotate(회전), scale(크기), translate(위치 등등)
+        translate로 위치를 옮기더라도, 나머지것들에 대해 영향을 주진 않는다
+    -->
+
+</head>
+
+<body>
+    <img id="logo" src="/img/JPG.jfif">
+</body>
+
+</html>

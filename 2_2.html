@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+    lang attribute는 검색엔진에게 사용 언어정보를준다
+-->
+<html lang="kr">
+
+<head>
+
+    <title>FormalDocumnet</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is my web site." />
+    <!--
+            link는 작은 아이콘을 title옆에 띄우게 해준다
+            사이즈 조절도 가능(안쓰는곳도있음)
+
+            본 사용처는, 현재 문서와 외부 리소스의 관계를 명시하는데 쓰는것이다
+        -->
+
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+    <!--
+        <link
+        rel="shortcut icon"
+        href="https://nomadcoders.co/m.png"
+        sizes="16x16 32x32 64x64"
+        />
+        -->
+    <!--
+            <head>의 메타 프로퍼티에서 og는 카카오톡에 사이트를 공유했을 때의 화면을 보여준다
+        -->
+
+</head>
+
+<body>
+    <img src="/img/imgsrc_test1.png">
+    <!--
+            <p>는 긴글
+            <pre>는
+            <abbr>은 약어
+            <cite>는 기울임체
+            <code>는코드처럼 보이기
+            <mark>를 <p>에 넣어사용하면 특정부분 강조
+            <Strong>은 <p>에 넣으면 굵게
+            <sub>는 <p>에 넣으면 아래로, <sup>은위로
+            <audio>는 소리태그, 닫아줘야하고 attribute에 controls와 src를 넣어야한다
+            <dialog> 는 알림박스
+        -->
+    <p>Energy burst/Spot light/Mascot Familiar/Over drive/Trinity</p>
+    <pre>Bubble Star/Super Nova</pre>
+    <p>My character is <abbr title="Dynast's Descendant">D's</abbr></p>
+    <cite>Successor</cite>
+    <code>Trinity Fusion</code>
+    <p>Soul <mark>Resonance</mark></p>
+    <p>Primal <Strong>Roar</Strong></p>
+    <p><sub>Pink</sub> <sup>Scud</sup></p>
+    <p>x<sup>2</sup></p>
+
+    <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+    </audio>
+
+    <dialog open>
+        <p>Finale Ribbon</p>
+    </dialog>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <Title>Flex Test</Title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+        }
+
+        div {
+            display: flex;
+            font-size: 28px;
+            color: white;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <!--flex컨테이너의 자식element도 마찬가지로 flex컨테이너로 만들 수 있다-->
+    <!--flex-direction옵션으로 주축과 교차축을 뒤틀 수 있다-->
+    <!--wrap옵션으로 찌그러트림과 여러줄에 요소 넣기를 조절할 수 있다-->
+
+</head>
+
+<body>
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+</body>
+
+</html>

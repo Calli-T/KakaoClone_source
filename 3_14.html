@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>States</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        @font-face {
+            font-family: maple;
+            src: url(/font/maple_right.ttf) format('truetype');
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            font-family: maple;
+            margin: 10px;
+        }
+
+        input:focus {
+            background-color: turquoise;
+        }
+
+        form {
+            border: 1px solid black;
+        }
+
+        form:focus-within {
+            border-color: blue;
+        }
+
+        button:hover {
+            border-color: blue;
+            background-color: mintcream;
+        }
+
+        button:active {
+            background-color: aquamarine;
+        }
+
+        form:hover input[type="password"]:focus {
+            background-color: black;
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: underline;
+        }
+    </style>
+    <!--
+        hover는 마우스를 위에 둔상태
+        active는 누르고 놓기 전까지의 상태
+        focus는 input등이 눌러진 상태
+        focus-within은 자식element가 focus일때 부모element의 상태
+        visited는 방문한적이 있을경우의 상태
+
+        조건을 겹쳐서 지정가능하다
+    -->
+
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="First Name">
+        <input type="password" required placeholder="password">
+        <button>Submit</button>
+    </form>
+    <a href="https://apple.com">Test</a>
+
+</body>
+
+</html>

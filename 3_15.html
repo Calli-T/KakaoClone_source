@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>States</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+
+    <style>
+        @font-face {
+            font-family: maple;
+            src: url(/font/maple_right.ttf) format('truetype');
+        }
+
+        input::placeholder {
+            font-family: 'maple';
+        }
+
+        p::selection {
+            background-color: yellowgreen;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+    </style>
+    <!--
+        ::placeholder를 input뒤에 붙여 placeholder를 디자인할 수 있다
+        ::selection을 통해 드래그 할 때의 글자 모양을 디자인할 수 있다
+        ::first-letter를 통해 첫 글자의 모양을 정할 수 있다
+    -->
+
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="Name">
+    </form>
+    <p>To be or not to be, that's the question</p>
+
+</body>
+
+</html>
