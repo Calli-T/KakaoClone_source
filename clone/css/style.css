@@ -51,3 +51,19 @@ body {
 #login-form input:focus {
   border-color: var(--yellow);
 }
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px 0px;
+}
+/*cursor는 커서모양 적용옵션*/
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
+/*inherit은 상속을 의미, default색은 black*/
