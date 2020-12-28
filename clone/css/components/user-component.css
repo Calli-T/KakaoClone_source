@@ -24,3 +24,8 @@
     니코좌의 팁:화면에 반복되는 요소들은 component로 따로 빼서 작성한다.
     작성한걸로 돌려막는다.
 */
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+}
