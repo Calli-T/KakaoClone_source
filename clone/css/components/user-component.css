@@ -1,3 +1,8 @@
+.user-component {
+  /*사용자 정보의 두 열을 space-between으로 정렬한다*/
+  justify-content: space-between;
+}
+
 .user-component,
 .user-component__column {
   display: flex;
@@ -28,4 +33,18 @@
   width: 80px;
   height: 80px;
   border-radius: 30px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 400;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
 }
