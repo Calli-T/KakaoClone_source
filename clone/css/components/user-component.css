@@ -1,6 +1,9 @@
 .user-component {
   /*사용자 정보의 두 열을 space-between으로 정렬한다*/
   justify-content: space-between;
+
+  /*margin-bottom: 을 추가해보자;*/
+  margin-bottom: 5px;
 }
 
 .user-component,

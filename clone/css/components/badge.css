@@ -9,3 +9,20 @@
   color: white;
   font-weight: 600;
 }
+
+.badge-sm {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  left: 32px;
+  bottom: 32px;
+}
+
+.badge-xs {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: relative;
+  left: 71px;
+  bottom: 27px;
+}

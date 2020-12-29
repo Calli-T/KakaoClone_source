@@ -24,11 +24,3 @@
   left: 15px;
   bottom: 15px;
 }
-
-.nav__btn:last-child .nav__notification {
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  left: 32px;
-  bottom: 32px;
-}
