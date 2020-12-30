@@ -12,3 +12,7 @@
   font-size: 28px;
   font-weight: 600;
 }
+
+.alt-header__column i {
+  margin-left: 10px;
+}
