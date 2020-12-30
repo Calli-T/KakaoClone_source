@@ -166,3 +166,10 @@ flex-childer에게는 order를 주어 정렬 순서를 바꿀 수있다.
 .reply__columnb button:active {
   outline: none;
 }
+/*
+이때 두번째 컬럼의 인풋의 width를 넓혀주기 위해서는
+부모인 두 칼럼과 reply에 width를 주어야함
+
+두 번째 컬럼에서 이모지와 버튼을 옮기기 위해
+position: absolute; 사용하였음
+*/
