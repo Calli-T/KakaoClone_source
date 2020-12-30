@@ -29,3 +29,7 @@
 .alt-header__column i {
   margin-left: 20px;
 }
+
+.alt-header__column:first-child i {
+  margin-left: 0px;
+}

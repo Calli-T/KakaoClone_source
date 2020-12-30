@@ -24,5 +24,145 @@
 }
 
 .main-chat {
-  margin-top: 150px;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #889aa9;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  height: 60px;
+  width: 60px;
+  border-radius: 40%;
+  margin-right: 9px;
+}
+
+.message__author {
+  opacity: 0.8;
+  font-size: 13px;
+  margin-bottom: 11px;
+  display: block;
+}
+
+.message__box {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__text {
+  background-color: white;
+  padding: 13px;
+  border-radius: 10px;
+  margin-right: 4px;
+
+  /*한쪽 귀퉁이 자르기*/
+  /*border-top-left-radius: 0px;*/
+}
+
+.message__time {
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__text {
+  background-color: var(--yellow);
+  margin-left: 5px;
+  margin-right: 0px;
+
+  /*한쪽 귀퉁이 자르기*/
+  /*border-top-left-radius: 15px;
+  border-top-right-radius: 0px;*/
+}
+
+/*
+flex-childer에게는 order를 주어 정렬 순서를 바꿀 수있다.
+*/
+/*.message-row--own .message__text {
+  order: 1;
+}
+
+.message-row--own .message__time {
+  order: 0;
+}*/
+
+.message-row--own .message__box {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  box-sizing: border-box;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  height: 30px;
+  border-radius: 20px;
+  width: 100%;
+  border: var(--standard-border);
+}
+
+.reply__column:last-child > i,
+.reply button {
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+
+.reply__column:last-child > i {
+  right: 40px;
+  top: 10px;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: non;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reply__column:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+
+.reply__column button:focus,
+.reply__columnb button:active {
+  outline: none;
 }
