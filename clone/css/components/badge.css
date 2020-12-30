@@ -18,11 +18,18 @@
   bottom: 32px;
 }
 
-.badge-xs {
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  position: relative;
-  left: 71px;
-  bottom: 27px;
+#question-badge {
+  margin-left: 5px;
+
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid tomato;
+  border-radius: 50%;
+
+  color: tomato;
+  font-weight: 600;
+  font-size: 16px;
+
+  text-align: center;
 }
