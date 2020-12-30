@@ -29,7 +29,7 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-@keyframes splash {
+/*@keyframes splash {
   from {
     opacity: 1;
   }
@@ -51,7 +51,7 @@
   align-items: center;
   animation: splash 0.4s ease-in-out forwards;
   animation-delay: 0.5s;
-}
+}*/
 
 /*
 css로는 요소들을 완전히 사라지게 할 수 없다

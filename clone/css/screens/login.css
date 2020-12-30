@@ -58,3 +58,27 @@
   font-size: 13px;
 }
 /*inherit은 상속을 의미, default색은 black*/
+
+@keyframes splash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  font-size: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: splash 0.4s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
