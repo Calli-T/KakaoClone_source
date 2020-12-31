@@ -19,3 +19,16 @@
 .screen-header__icons {
   position: relative;
 }
+
+@keyframes spinningGear {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: spinningGear 1s linear infinite;
+}
